@@ -17,6 +17,8 @@
         .title {
             width: 80%;
             margin-top: 2em;
+            /*標題 box 最大寬度 600px*/
+            max-width: 600px;
         }
         /*文字 box 寬度100%*/
         /*文字樣式 文字置中 文字白色 大小80px 文字邊框3px 黑色*/
@@ -27,14 +29,28 @@
             color: white;
             font-size: 80px;
             -webkit-text-stroke: 3px black;
+            /*文字 box 最大寬度 800px*/
+            max-width: 800px;
+            /*文字 div 排版填滿剩餘空間*/
+            flex: 1;
         }
         /*文字 div 背景圖片 用 id 設定imgs/p.png 圖片靠下 填滿容器 不重複*/
         #p {
+            /*新贈文字 div 背景圖片 用 id 設定 imgs/op.png*/
             background-image: url('imgs/p.png');
             background-position: bottom;
             background-size: contain;
             background-repeat: no-repeat;
         }
+        /*body box 編距為0*/
+        body {
+            margin: 0;
+            /*字型 sans-serif*/
+            font-family: sans-serif;
+            /*防止文字被選取*/
+            user-select: none;
+        }
+
     </style>
 </head>
 <body>
